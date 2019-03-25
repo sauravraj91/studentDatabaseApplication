@@ -28,8 +28,8 @@ public class Student {
 		this.gradeYear = setGradeYear();
 		setStudentID();
 		
-		System.out.println("NAME OF THE STUDENT : " + firstName + " " + lastName + "\nGrade Year is :"
-				+ this.gradeYear.substring(1) + "\nStudent ID IS : " + studentID);
+		//System.out.println("NAME OF THE STUDENT : " + firstName + " " + lastName + "\nGrade Year is :"
+			//+ this.gradeYear.substring(1) + "\nStudent ID IS : " + studentID);
 
 	}
 
@@ -91,8 +91,15 @@ public class Student {
 		tuitionBalance = tuitionBalance - payment;
 		System.out.println("Thankyou for your payment :" + payment + "$");
 		viewBalance();
+		showInfo();
 	}
 
 	// show their info
+	
+	public void showInfo() {
+		System.out.println("NAME OF THE STUDENT : " + firstName  + lastName + "\nGrade Year is :" + 
+				this.gradeYear.substring(1) + " \nStudent ID IS :" + studentID);
+	}
+	
 
 }
